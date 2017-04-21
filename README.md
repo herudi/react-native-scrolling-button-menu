@@ -1,7 +1,7 @@
 # react-native-scrolling-button-menu
 React native scrolling button menu horizontal like google play.
 
-[![npm version](https://img.shields.io/badge/npm-0.0.3-blue.svg)](https://www.npmjs.com/package/react-native-scrolling-button-menu)
+[![npm version](https://img.shields.io/badge/npm-0.0.4-blue.svg)](https://www.npmjs.com/package/react-native-scrolling-button-menu)
 
 ![Screenshot](https://drive.google.com/uc?export=view&id=0BwIOCc0bQ1AnNV90Z0p1azJ5SXc)
 
@@ -60,7 +60,7 @@ let menus = [
 ];
 
 export default class Example extends Component {
-  callback(menu) {
+  onPressButtonMenu(menu) {
     console.log(menu.text);
   }
 
@@ -68,10 +68,10 @@ export default class Example extends Component {
     return (
       //render this
       <ScrollingButtonMenu 
-          items={menus}
-          padding={10}
-          onPress={this.callback.bind(this)}
-        />
+        items={menus}
+        style={{padding:15}}
+        onPress={this.onPressButtonMenu.bind(this)}
+      />
     );
   }
 }
@@ -83,7 +83,7 @@ export default class Example extends Component {
 |--- |--- |--- |
 |`items`|Array|Array for button menu is required|
 |`onPress`|Function(menu)|Function when press button is required|
-|`padding`|Number|Padding on ancor is required|
+|`upperCase`|Boolean|Uppercase text (optional) default value => true|
 |`selectedOpacity`|Number|Opacity when pressed button (optional) default value => 0.7|
 |`fontSize`|Number|Font size text (optional) default value => 12|
 |`fontWeight`|String|Font weight text (optional) default value => bold|
@@ -94,3 +94,5 @@ export default class Example extends Component {
 |`paddingItemBottom`|Number|Padding bottom button menu (optional) default value => 7|
 |`paddingItemLeft`|Number|Padding left button menu (optional) default value => 16|
 |`paddingItemRight`|Number|Padding right button menu (optional) default value => 16|
+|`paddingListEnd`|Number|Padding end on list (optional) default value => 7|
+
