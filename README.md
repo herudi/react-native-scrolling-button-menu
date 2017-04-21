@@ -1,2 +1,94 @@
 # react-native-scrolling-button-menu
 Scrolling button menu horizontal like google play.
+
+<!-- ![Screenshot](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImakRNWTBZZklBNmc) -->
+
+## Installation
+`npm install --save react-native-scrolling-button-menu`
+
+## Usage
+```JavaScript
+import React, { Component } from 'react';
+import {
+  View
+} from 'react-native';
+
+//import this
+import ScrollingButtonMenu from 'react-native-scrolling-button-menu';
+
+//define menu
+let menus = [
+    {
+       text:'England',
+       textColor:'#FFFFFF',
+       backgroundColor:'#388E3C',
+       borderColor:'#388E3C',
+    },
+    {
+       text:'Australia',
+       textColor:'#FFFFFF',
+       backgroundColor:'#388E3C',
+       borderColor:'#388E3C',
+    },
+    {
+       text:'Indonesian',
+       textColor:'#FFFFFF',
+       backgroundColor:'#388E3C',
+       borderColor:'#388E3C',
+    },
+    {
+       text:'USA',
+       textColor:'#FFFFFF',
+       backgroundColor:'#388E3C',
+       borderColor:'#388E3C',
+    },
+    {
+       text:'Canada',
+       textColor:'#FFFFFF',
+       backgroundColor:'#388E3C',
+       borderColor:'#388E3C',
+    },
+    {
+       text:'Spain',
+       textColor:'#FFFFFF',
+       backgroundColor:'#388E3C',
+       borderColor:'#388E3C',
+    }
+
+];
+
+export default class Example extends Component {
+  callback(menu) {
+    console.log(menu.text);
+  }
+
+  render() {
+    return (
+      //render this
+      <ScrollingButtonMenu 
+          items={menus}
+          padding={10}
+          onPress={this.callback.bind(this)}
+        />
+    );
+  }
+}
+
+```
+
+## Props
+|Key |Type |Description |
+|--- |--- |--- |
+|`items`|Array|Array for button menu is required|
+|`onPress`|Function(menu)|Function when press button is required|
+|`padding`|Number|Padding on ancor is required|
+|`selectedOpacity`|Number|Opacity when pressed button (optional) default value => 0.7|
+|`fontSize`|Number|Font size text (optional) default value => 12|
+|`fontWeight`|String|Font weight text (optional) default value => bold|
+|`borderItemWidth`|Number|Border width button menu (optional) default value => 1|
+|`borderItemRadius`|Number|Border radius button menu (optional) default value => 25|
+|`marginItemRight`|Number|Margin left on button menu (optional) default value => 7|
+|`paddingItemTop`|Number|Padding top button menu (optional) default value => 7|
+|`paddingItemBottom`|Number|Padding bottom button menu (optional) default value => 7|
+|`paddingItemLeft`|Number|Padding left button menu (optional) default value => 16|
+|`paddingItemRight`|Number|Padding right button menu (optional) default value => 16|
