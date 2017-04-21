@@ -1,6 +1,6 @@
 {
   "name": "react-native-scrolling-button-menu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React native scrolling button menu horizontal like google play",
   "main": "lib/index.js",
   "scripts": {},
