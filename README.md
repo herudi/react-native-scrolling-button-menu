@@ -1,7 +1,7 @@
 # react-native-scrolling-button-menu
 React native scrolling button menu horizontal like google play.
 
-[![npm version](https://img.shields.io/badge/npm-0.0.1-blue.svg)](https://www.npmjs.com/package/react-native-scrolling-button-menu)
+[![npm version](https://img.shields.io/badge/npm-0.0.2-blue.svg)](https://www.npmjs.com/package/react-native-scrolling-button-menu)
 
 ![Screenshot](https://drive.google.com/uc?export=view&id=0BwIOCc0bQ1AnNV90Z0p1azJ5SXc)
 
