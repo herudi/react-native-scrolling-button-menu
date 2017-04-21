@@ -60,6 +60,7 @@ let menus = [
 ];
 
 export default class Example extends Component {
+
   onPressButtonMenu(menu) {
     console.log(menu.text);
   }
